@@ -1,0 +1,102 @@
+﻿2026-06-14T23:19:00.1521748Z ##[group]Run gradle assembleDebug
+2026-06-14T23:19:00.1522129Z [36;1mgradle assembleDebug[0m
+2026-06-14T23:19:00.1557055Z shell: /usr/bin/bash -e {0}
+2026-06-14T23:19:00.1557339Z env:
+2026-06-14T23:19:00.1557660Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:19:00.1558194Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:19:00.1558629Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-06-14T23:19:00.1558960Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-06-14T23:19:00.1559267Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-06-14T23:19:00.1559704Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-06-14T23:19:00.1560220Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-06-14T23:19:00.1560562Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-06-14T23:19:00.1560834Z ##[endgroup]
+2026-06-14T23:19:00.7571700Z 
+2026-06-14T23:19:00.7585163Z Welcome to Gradle 8.2!
+2026-06-14T23:19:00.7586004Z 
+2026-06-14T23:19:00.7586445Z Here are the highlights of this release:
+2026-06-14T23:19:00.7587406Z  - Kotlin DSL: new reference documentation, assignment syntax by default
+2026-06-14T23:19:00.7588554Z  - Kotlin DSL is now the default with Gradle init
+2026-06-14T23:19:00.7589431Z  - Improved suggestions to resolve errors in console output
+2026-06-14T23:19:00.7590101Z 
+2026-06-14T23:19:00.7590647Z For more details see https://docs.gradle.org/8.2/release-notes.html
+2026-06-14T23:19:00.7591690Z 
+2026-06-14T23:19:00.9550213Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-06-14T23:19:34.3574836Z Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
+2026-06-14T23:19:34.3575881Z License for package Android SDK Build-Tools 33.0.1 accepted.
+2026-06-14T23:19:34.3576544Z Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+2026-06-14T23:19:36.1550507Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
+2026-06-14T23:19:36.1551863Z Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
+2026-06-14T23:19:36.1552970Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
+2026-06-14T23:19:36.3549665Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
+2026-06-14T23:19:36.7560954Z > Task :app:preBuild UP-TO-DATE
+2026-06-14T23:19:36.7591934Z > Task :app:preDebugBuild UP-TO-DATE
+2026-06-14T23:19:36.7592874Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-06-14T23:19:46.3572533Z > Task :app:generateDebugResValues
+2026-06-14T23:19:46.3575157Z > Task :app:checkDebugAarMetadata
+2026-06-14T23:19:46.4552655Z > Task :app:mapDebugSourceSetPaths
+2026-06-14T23:19:46.4553797Z > Task :app:generateDebugResources
+2026-06-14T23:19:47.0552176Z > Task :app:packageDebugResources
+2026-06-14T23:19:47.6549642Z > Task :app:mergeDebugResources
+2026-06-14T23:19:48.0562316Z > Task :app:createDebugCompatibleScreenManifests
+2026-06-14T23:19:48.0563978Z > Task :app:extractDeepLinksDebug
+2026-06-14T23:19:48.1562187Z > Task :app:parseDebugLocalResources
+2026-06-14T23:19:48.2553310Z 
+2026-06-14T23:19:48.2554238Z > Task :app:processDebugMainManifest
+2026-06-14T23:19:48.2555925Z package="com.lumina.sunchaser" found in source AndroidManifest.xml: /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/AndroidManifest.xml.
+2026-06-14T23:19:48.2557895Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+2026-06-14T23:19:48.2560309Z Recommendation: remove package="com.lumina.sunchaser" from the source AndroidManifest.xml: /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/AndroidManifest.xml.
+2026-06-14T23:19:48.5578815Z 
+2026-06-14T23:19:48.5581775Z > Task :app:processDebugManifest
+2026-06-14T23:19:48.6561769Z > Task :app:javaPreCompileDebug
+2026-06-14T23:19:48.6592083Z > Task :app:mergeDebugShaders
+2026-06-14T23:19:48.6593070Z > Task :app:compileDebugShaders NO-SOURCE
+2026-06-14T23:19:48.6594050Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-06-14T23:19:48.7612104Z > Task :app:mergeDebugAssets
+2026-06-14T23:19:48.7683063Z > Task :app:compressDebugAssets
+2026-06-14T23:19:48.7734805Z > Task :app:desugarDebugFileDependencies
+2026-06-14T23:19:51.2549702Z > Task :app:mergeDebugJniLibFolders
+2026-06-14T23:19:51.2583031Z > Task :app:checkDebugDuplicateClasses
+2026-06-14T23:19:51.3549809Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+2026-06-14T23:20:18.5549337Z > Task :app:processDebugManifestForPackage
+2026-06-14T23:20:21.3552308Z > Task :app:mergeExtDexDebug
+2026-06-14T23:21:00.9592190Z > Task :app:stripDebugDebugSymbols NO-SOURCE
+2026-06-14T23:21:00.9625196Z > Task :app:mergeLibDexDebug
+2026-06-14T23:21:01.2552101Z > Task :app:processDebugResources
+2026-06-14T23:21:02.6563827Z > Task :app:validateSigningDebug
+2026-06-14T23:21:07.1549138Z > Task :app:writeDebugAppMetadata
+2026-06-14T23:21:07.2549359Z > Task :app:writeDebugSigningConfigVersions
+2026-06-14T23:21:13.8583084Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:6:8 Unresolved reference: dagger
+2026-06-14T23:21:13.8585412Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:7:8 Unresolved reference: dagger
+2026-06-14T23:21:13.8587557Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:8:8 Unresolved reference: dagger
+2026-06-14T23:21:13.8589625Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:9:8 Unresolved reference: dagger
+2026-06-14T23:21:13.8592019Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:12:14 Unresolved reference: inject
+2026-06-14T23:21:13.8594169Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:14:2 Unresolved reference: Module
+2026-06-14T23:21:13.8596374Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:15:2 Unresolved reference: InstallIn
+2026-06-14T23:21:13.8598640Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:15:12 Unresolved reference: SingletonComponent
+2026-06-14T23:21:13.8600851Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:18:6 Unresolved reference: Provides
+2026-06-14T23:21:13.8603278Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:19:6 Unresolved reference: Singleton
+2026-06-14T23:21:13.8605452Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:28:6 Unresolved reference: Provides
+2026-06-14T23:21:13.8608086Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/core/di/NetworkModule.kt:29:6 Unresolved reference: Singleton
+2026-06-14T23:21:13.8609322Z 
+2026-06-14T23:21:13.8633025Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/presentation/main/MainScreen.kt:29:9 This material API is experimental and is likely to change or to be removed in the future.
+2026-06-14T23:21:13.8634894Z > Task :app:compileDebugKotlin FAILED
+2026-06-14T23:21:13.8663812Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/presentation/main/MainScreen.kt:31:17 This material API is experimental and is likely to change or to be removed in the future.
+2026-06-14T23:21:13.8667063Z e: file:///home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/java/com/lumina/sunchaser/presentation/main/MainScreen.kt:76:30 'if' must have both main and 'else' branches if used as an expression
+2026-06-14T23:21:13.9548866Z 
+2026-06-14T23:21:13.9562458Z FAILURE: Build failed with an exception.
+2026-06-14T23:21:13.9563052Z 
+2026-06-14T23:21:13.9563309Z * What went wrong:
+2026-06-14T23:21:13.9566657Z Execution failed for task ':app:compileDebugKotlin'.
+2026-06-14T23:21:13.9595368Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2026-06-14T23:21:13.9596586Z 25 actionable tasks: 25 executed
+2026-06-14T23:21:13.9622318Z    > Compilation error. See log for more details
+2026-06-14T23:21:13.9622763Z 
+2026-06-14T23:21:13.9624610Z * Try:
+2026-06-14T23:21:13.9625042Z > Run with --stacktrace option to get the stack trace.
+2026-06-14T23:21:13.9625699Z > Run with --info or --debug option to get more log output.
+2026-06-14T23:21:13.9626403Z > Run with --scan to get full insights.
+2026-06-14T23:21:13.9627083Z > Get more help at https://help.gradle.org.
+2026-06-14T23:21:13.9644010Z 
+2026-06-14T23:21:13.9645160Z BUILD FAILED in 2m 13s
+2026-06-14T23:21:14.3584119Z ##[error]Process completed with exit code 1.

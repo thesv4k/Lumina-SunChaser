@@ -71,9 +71,9 @@ fun MainScreen(viewModel: MainViewModel) {
                         
                         Spacer(modifier = Modifier.height(16.dp))
                         
-                        state.aiRecommendation?.let { ai ->
-                            AiRecommendationCard(ai)
-                        } ?: if (state.profile.aiEnabled && state.profile.onlySqApiKey.isBlank()) {
+                        if (state.aiRecommendation != null) {
+                            AiRecommendationCard(state.aiRecommendation!!)
+                        } else if (state.profile.aiEnabled && state.profile.onlySqApiKey.isBlank()) {
                             Text("Введите API ключ OnlySQ в настройках для ИИ советов", style = MaterialTheme.typography.bodySmall)
                         }
                     }

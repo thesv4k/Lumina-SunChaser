@@ -1,0 +1,20 @@
+﻿2026-06-14T23:21:14.3748069Z Post job cleanup.
+2026-06-14T23:21:14.6284590Z In post-action step
+2026-06-14T23:21:14.6293594Z Stopping all Gradle daemons before saving Gradle User Home state
+2026-06-14T23:21:14.6294651Z Stopping Gradle daemons for /home/runner/gradle-installations/installs/gradle-8.2
+2026-06-14T23:21:14.6314226Z [command]/home/runner/gradle-installations/installs/gradle-8.2/bin/gradle --stop
+2026-06-14T23:21:15.4747288Z Stopping Daemon(s)
+2026-06-14T23:21:15.4764897Z 1 Daemon stopped
+2026-06-14T23:21:15.4912773Z ##[group]Caching Gradle state
+2026-06-14T23:21:15.8236441Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-ed7396dade065971a25f3b9721f51808
+2026-06-14T23:21:15.8912662Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-22ddeb560004164d6c100198e497e802
+2026-06-14T23:21:15.9806061Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:21:16.2887826Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:21:17.2469717Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-ed7396dade065971a25f3b9721f51808: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0bTcvagAAAAB1Li6jGPSBQoWh4G3wHZYLUEhMMzBFREdFMDIxNQBFZGdl
+2026-06-14T23:21:17.4151726Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-22ddeb560004164d6c100198e497e802: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0bTcvagAAAACiY/S53E5QRoBt2EBTjTlPUEhMMzBFREdFMDIxMwBFZGdl
+2026-06-14T23:21:17.5081804Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|build[5df42585ae8f8da228c604b8b4e8707c]-c88ed61e6546fb27261a2872a4cf9f65c77c3c2d
+2026-06-14T23:21:17.5173448Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:21:18.3996176Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|build[5df42585ae8f8da228c604b8b4e8707c]-c88ed61e6546fb27261a2872a4cf9f65c77c3c2d: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0bjcvagAAAABGeueRAU7DRJtNU2uYKLJbUEhMMzBFREdFMDEyMABFZGdl
+2026-06-14T23:21:18.4002064Z ##[endgroup]
+2026-06-14T23:21:18.4002456Z Generating Job Summary
+2026-06-14T23:21:18.4023982Z Completed post-action step
