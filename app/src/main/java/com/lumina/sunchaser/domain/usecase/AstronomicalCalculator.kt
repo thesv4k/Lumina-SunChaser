@@ -3,7 +3,7 @@ package com.lumina.sunchaser.domain.usecase
 import java.time.LocalDateTime
 import kotlin.math.*
 
-class AstronomicalCalculator @Inject constructor() {
+class AstronomicalCalculator () {
 
     /**
      * Упрощенный расчет азимута и высоты солнца (v2.0).

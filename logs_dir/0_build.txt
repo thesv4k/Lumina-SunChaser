@@ -1,0 +1,413 @@
+﻿2026-06-14T23:12:37.0243326Z Current runner version: '2.335.1'
+2026-06-14T23:12:37.0269849Z ##[group]Runner Image Provisioner
+2026-06-14T23:12:37.0270686Z Hosted Compute Agent
+2026-06-14T23:12:37.0271277Z Version: 20260527.539
+2026-06-14T23:12:37.0272029Z Commit: a891dd388383b896fa6ac04a82c0b75cec981078
+2026-06-14T23:12:37.0272864Z Build Date: 2026-05-27T21:39:57Z
+2026-06-14T23:12:37.0273610Z Worker ID: {78669918-2269-4974-86df-48af79f63942}
+2026-06-14T23:12:37.0274334Z Azure Region: eastus2
+2026-06-14T23:12:37.0274907Z ##[endgroup]
+2026-06-14T23:12:37.0276342Z ##[group]Operating System
+2026-06-14T23:12:37.0277205Z Ubuntu
+2026-06-14T23:12:37.0277801Z 24.04.4
+2026-06-14T23:12:37.0278354Z LTS
+2026-06-14T23:12:37.0278892Z ##[endgroup]
+2026-06-14T23:12:37.0279516Z ##[group]Runner Image
+2026-06-14T23:12:37.0280176Z Image: ubuntu-24.04
+2026-06-14T23:12:37.0280742Z Version: 20260607.184.1
+2026-06-14T23:12:37.0282104Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260607.184/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-14T23:12:37.0284384Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260607.184
+2026-06-14T23:12:37.0285934Z ##[endgroup]
+2026-06-14T23:12:37.0288453Z ##[group]GITHUB_TOKEN Permissions
+2026-06-14T23:12:37.0290731Z Contents: read
+2026-06-14T23:12:37.0291332Z Metadata: read
+2026-06-14T23:12:37.0292065Z Packages: read
+2026-06-14T23:12:37.0292642Z ##[endgroup]
+2026-06-14T23:12:37.0294783Z Secret source: Actions
+2026-06-14T23:12:37.0295908Z Prepare workflow directory
+2026-06-14T23:12:37.0630428Z Prepare all required actions
+2026-06-14T23:12:37.0668968Z Getting action download info
+2026-06-14T23:12:37.4037431Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-14T23:12:37.4765188Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+2026-06-14T23:12:37.7923767Z Download action repository 'gradle/actions@v3' (SHA:d9c87d481d55275bb5441eef3fe0e46805f9ef70)
+2026-06-14T23:12:38.3378848Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-06-14T23:12:38.5977546Z Complete job name: build
+2026-06-14T23:12:38.6867459Z ##[group]Run actions/checkout@v4
+2026-06-14T23:12:38.6868956Z with:
+2026-06-14T23:12:38.6869777Z   repository: thesv4k/Lumina-SunChaser
+2026-06-14T23:12:38.6880135Z   token: ***
+2026-06-14T23:12:38.6880950Z   ssh-strict: true
+2026-06-14T23:12:38.6881772Z   ssh-user: git
+2026-06-14T23:12:38.6882607Z   persist-credentials: true
+2026-06-14T23:12:38.6883531Z   clean: true
+2026-06-14T23:12:38.6884371Z   sparse-checkout-cone-mode: true
+2026-06-14T23:12:38.6885358Z   fetch-depth: 1
+2026-06-14T23:12:38.6886159Z   fetch-tags: false
+2026-06-14T23:12:38.6886987Z   show-progress: true
+2026-06-14T23:12:38.6887941Z   lfs: false
+2026-06-14T23:12:38.6888719Z   submodules: false
+2026-06-14T23:12:38.6889556Z   set-safe-directory: true
+2026-06-14T23:12:38.6890723Z ##[endgroup]
+2026-06-14T23:12:38.8084148Z Syncing repository: thesv4k/Lumina-SunChaser
+2026-06-14T23:12:38.8087281Z ##[group]Getting Git version info
+2026-06-14T23:12:38.8088874Z Working directory is '/home/runner/work/Lumina-SunChaser/Lumina-SunChaser'
+2026-06-14T23:12:38.8091106Z [command]/usr/bin/git version
+2026-06-14T23:12:38.8133525Z git version 2.54.0
+2026-06-14T23:12:38.8160109Z ##[endgroup]
+2026-06-14T23:12:38.8176036Z Temporarily overriding HOME='/home/runner/work/_temp/fd4f508e-2940-475d-9b74-824571e57fdf' before making global git config changes
+2026-06-14T23:12:38.8180430Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-14T23:12:38.8191615Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Lumina-SunChaser/Lumina-SunChaser
+2026-06-14T23:12:38.8239687Z Deleting the contents of '/home/runner/work/Lumina-SunChaser/Lumina-SunChaser'
+2026-06-14T23:12:38.8243155Z ##[group]Initializing the repository
+2026-06-14T23:12:38.8247366Z [command]/usr/bin/git init /home/runner/work/Lumina-SunChaser/Lumina-SunChaser
+2026-06-14T23:12:38.8342030Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-14T23:12:38.8344448Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-14T23:12:38.8346892Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-14T23:12:38.8349308Z hint: call:
+2026-06-14T23:12:38.8350271Z hint:
+2026-06-14T23:12:38.8351211Z hint: 	git config --global init.defaultBranch <name>
+2026-06-14T23:12:38.8352394Z hint:
+2026-06-14T23:12:38.8353564Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-14T23:12:38.8355754Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-14T23:12:38.8357450Z hint:
+2026-06-14T23:12:38.8358232Z hint: 	git branch -m <name>
+2026-06-14T23:12:38.8359262Z hint:
+2026-06-14T23:12:38.8360725Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-14T23:12:38.8362826Z Initialized empty Git repository in /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/.git/
+2026-06-14T23:12:38.8366324Z [command]/usr/bin/git remote add origin https://github.com/thesv4k/Lumina-SunChaser
+2026-06-14T23:12:38.8402833Z ##[endgroup]
+2026-06-14T23:12:38.8404343Z ##[group]Disabling automatic garbage collection
+2026-06-14T23:12:38.8406208Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-14T23:12:38.8435199Z ##[endgroup]
+2026-06-14T23:12:38.8436529Z ##[group]Setting up auth
+2026-06-14T23:12:38.8441346Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-14T23:12:38.8477342Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-14T23:12:38.8822649Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-14T23:12:38.8852515Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-14T23:12:38.9081843Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-14T23:12:38.9122213Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-14T23:12:38.9354586Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-14T23:12:38.9389171Z ##[endgroup]
+2026-06-14T23:12:38.9463270Z ##[group]Fetching the repository
+2026-06-14T23:12:38.9466634Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +be10eca51d66e79153b60d6d3b9c6de3e364bd8a:refs/remotes/origin/main
+2026-06-14T23:12:39.1566963Z From https://github.com/thesv4k/Lumina-SunChaser
+2026-06-14T23:12:39.1569659Z  * [new ref]         be10eca51d66e79153b60d6d3b9c6de3e364bd8a -> origin/main
+2026-06-14T23:12:39.1608084Z ##[endgroup]
+2026-06-14T23:12:39.1609458Z ##[group]Determining the checkout info
+2026-06-14T23:12:39.1611112Z ##[endgroup]
+2026-06-14T23:12:39.1614984Z [command]/usr/bin/git sparse-checkout disable
+2026-06-14T23:12:39.1659718Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-14T23:12:39.1686235Z ##[group]Checking out the ref
+2026-06-14T23:12:39.1689721Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-14T23:12:39.1753575Z Switched to a new branch 'main'
+2026-06-14T23:12:39.1755797Z branch 'main' set up to track 'origin/main'.
+2026-06-14T23:12:39.1763461Z ##[endgroup]
+2026-06-14T23:12:39.1800720Z [command]/usr/bin/git log -1 --format=%H
+2026-06-14T23:12:39.1823549Z be10eca51d66e79153b60d6d3b9c6de3e364bd8a
+2026-06-14T23:12:39.2164470Z ##[group]Run actions/setup-java@v4
+2026-06-14T23:12:39.2165472Z with:
+2026-06-14T23:12:39.2166215Z   java-version: 17
+2026-06-14T23:12:39.2167248Z   distribution: temurin
+2026-06-14T23:12:39.2168365Z   java-package: jdk
+2026-06-14T23:12:39.2169180Z   check-latest: false
+2026-06-14T23:12:39.2170008Z   server-id: github
+2026-06-14T23:12:39.2170833Z   server-username: GITHUB_ACTOR
+2026-06-14T23:12:39.2171796Z   server-password: GITHUB_TOKEN
+2026-06-14T23:12:39.2172746Z   overwrite-settings: true
+2026-06-14T23:12:39.2173635Z   job-status: success
+2026-06-14T23:12:39.2183217Z   token: ***
+2026-06-14T23:12:39.2183981Z ##[endgroup]
+2026-06-14T23:12:39.4171656Z ##[group]Installed distributions
+2026-06-14T23:12:39.4229246Z Resolved Java 17.0.19+10 from tool-cache
+2026-06-14T23:12:39.4231004Z Setting Java 17.0.19+10 as the default
+2026-06-14T23:12:39.4242997Z Creating toolchains.xml for JDK version 17 from temurin
+2026-06-14T23:12:39.4314451Z Writing to /home/runner/.m2/toolchains.xml
+2026-06-14T23:12:39.4315817Z 
+2026-06-14T23:12:39.4316366Z Java configuration:
+2026-06-14T23:12:39.4317929Z   Distribution: temurin
+2026-06-14T23:12:39.4319234Z   Version: 17.0.19+10
+2026-06-14T23:12:39.4321030Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:39.4322596Z 
+2026-06-14T23:12:39.4325195Z ##[endgroup]
+2026-06-14T23:12:39.4346749Z Creating settings.xml with server-id: github
+2026-06-14T23:12:39.4348738Z Writing to /home/runner/.m2/settings.xml
+2026-06-14T23:12:39.4725404Z ##[group]Run gradle/actions/setup-gradle@v3
+2026-06-14T23:12:39.4726479Z with:
+2026-06-14T23:12:39.4727501Z   gradle-version: 8.2
+2026-06-14T23:12:39.4728363Z   cache-disabled: false
+2026-06-14T23:12:39.4729230Z   cache-read-only: false
+2026-06-14T23:12:39.4730106Z   cache-write-only: false
+2026-06-14T23:12:39.4731031Z   cache-overwrite-existing: false
+2026-06-14T23:12:39.4732153Z   gradle-home-cache-includes: caches
+notifications
+
+2026-06-14T23:12:39.4733349Z   gradle-home-cache-cleanup: false
+2026-06-14T23:12:39.4734332Z   add-job-summary: always
+2026-06-14T23:12:39.4735272Z   add-job-summary-as-pr-comment: never
+2026-06-14T23:12:39.4736309Z   dependency-graph: disabled
+2026-06-14T23:12:39.4737483Z   dependency-graph-continue-on-failure: true
+2026-06-14T23:12:39.4738576Z   build-scan-publish: false
+2026-06-14T23:12:39.4739492Z   validate-wrappers: false
+2026-06-14T23:12:39.4740405Z   generate-job-summary: true
+2026-06-14T23:12:39.4741371Z   gradle-home-cache-strict-match: false
+2026-06-14T23:12:39.4742454Z   workflow-job-context: null
+2026-06-14T23:12:39.4752346Z   github-token: ***
+2026-06-14T23:12:39.4753157Z env:
+2026-06-14T23:12:39.4754231Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:39.4755958Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:39.4757545Z ##[endgroup]
+2026-06-14T23:12:39.8722618Z Merged default JDK locations into /home/runner/.m2/toolchains.xml
+2026-06-14T23:12:39.8724845Z ##[group]Restore Gradle state from cache
+2026-06-14T23:12:39.9943733Z ##[warning]Failed to restore gradle-home-v1|Linux|build[5df42585ae8f8da228c604b8b4e8707c]-be10eca51d66e79153b60d6d3b9c6de3e364bd8a: Error: Cache service responded with 400
+2026-06-14T23:12:40.0006574Z Gradle User Home cache not found. Will initialize empty.
+2026-06-14T23:12:40.0007822Z ##[endgroup]
+2026-06-14T23:12:40.0738052Z ##[group]Provision Gradle 8.2
+2026-06-14T23:12:40.1363088Z ##[warning]Restore Gradle distribution 8.2 failed: Error: Cache service responded with 400
+2026-06-14T23:12:40.1365427Z Gradle distribution 8.2 not found in cache. Will download.
+2026-06-14T23:12:41.2841364Z Downloaded https://services.gradle.org/distributions/gradle-8.2-bin.zip to /home/runner/gradle-installations/downloads/gradle-8.2-bin.zip (size 128689645)
+2026-06-14T23:12:41.2967292Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:12:41.4892050Z ##[warning]Save Gradle distribution 8.2 failed: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0aTUvagAAAABbOm/lZZ/gT6jWyVC5UtSeUEhMMzBFREdFMDEyMABFZGdl
+2026-06-14T23:12:41.4906212Z [command]/usr/bin/unzip -o -q /home/runner/gradle-installations/downloads/gradle-8.2-bin.zip
+2026-06-14T23:12:42.4966618Z Extracted Gradle 8.2 to /home/runner/gradle-installations/installs/gradle-8.2
+2026-06-14T23:12:42.4968404Z Provisioned Gradle executable /home/runner/gradle-installations/installs/gradle-8.2/bin/gradle
+2026-06-14T23:12:42.4969620Z ##[endgroup]
+2026-06-14T23:12:42.5128450Z ##[group]Run mkdir -p app/src/main/res/values
+2026-06-14T23:12:42.5128962Z [36;1mmkdir -p app/src/main/res/values[0m
+2026-06-14T23:12:42.5129350Z [36;1mmkdir -p app/src/main/res/mipmap-anydpi-v26[0m
+2026-06-14T23:12:42.5129720Z [36;1mmkdir -p app/src/main/res/drawable[0m
+2026-06-14T23:12:42.5130098Z [36;1mmkdir -p app/src/main/res/mipmap-hdpi[0m
+2026-06-14T23:12:42.5130408Z [36;1m[0m
+2026-06-14T23:12:42.5130636Z [36;1m# Create minimal AndroidManifest.xml[0m
+2026-06-14T23:12:42.5131027Z [36;1mcat <<EOF > app/src/main/AndroidManifest.xml[0m
+2026-06-14T23:12:42.5131406Z [36;1m<?xml version="1.0" encoding="utf-8"?>[0m
+2026-06-14T23:12:42.5131862Z [36;1m<manifest xmlns:android="http://schemas.android.com/apk/res/android"[0m
+2026-06-14T23:12:42.5132303Z [36;1m    package="com.lumina.sunchaser">[0m
+2026-06-14T23:12:42.5132605Z [36;1m    <application[0m
+2026-06-14T23:12:42.5132898Z [36;1m        android:allowBackup="true"[0m
+2026-06-14T23:12:42.5133249Z [36;1m        android:icon="@mipmap/ic_launcher"[0m
+2026-06-14T23:12:42.5133560Z [36;1m        android:label="Lumina"[0m
+2026-06-14T23:12:42.5133886Z [36;1m        android:roundIcon="@mipmap/ic_launcher_round"[0m
+2026-06-14T23:12:42.5134227Z [36;1m        android:supportsRtl="true"[0m
+2026-06-14T23:12:42.5134534Z [36;1m        android:theme="@style/Theme.Lumina">[0m
+2026-06-14T23:12:42.5134850Z [36;1m        <activity[0m
+2026-06-14T23:12:42.5135117Z [36;1m            android:name=".MainActivity"[0m
+2026-06-14T23:12:42.5135431Z [36;1m            android:exported="true"[0m
+2026-06-14T23:12:42.5135758Z [36;1m            android:theme="@style/Theme.Lumina">[0m
+2026-06-14T23:12:42.5136092Z [36;1m            <intent-filter>[0m
+2026-06-14T23:12:42.5136499Z [36;1m                <action android:name="android.intent.action.MAIN" />[0m
+2026-06-14T23:12:42.5136960Z [36;1m                <category android:name="android.intent.category.LAUNCHER" />[0m
+2026-06-14T23:12:42.5137512Z [36;1m            </intent-filter>[0m
+2026-06-14T23:12:42.5137786Z [36;1m        </activity>[0m
+2026-06-14T23:12:42.5138051Z [36;1m    </application>[0m
+2026-06-14T23:12:42.5138291Z [36;1m</manifest>[0m
+2026-06-14T23:12:42.5138508Z [36;1mEOF[0m
+2026-06-14T23:12:42.5138704Z [36;1m[0m
+2026-06-14T23:12:42.5138915Z [36;1m# Create minimal MainActivity.kt[0m
+2026-06-14T23:12:42.5139307Z [36;1mcat <<EOF > app/src/main/java/com/lumina/sunchaser/MainActivity.kt[0m
+2026-06-14T23:12:42.5139694Z [36;1mpackage com.lumina.sunchaser[0m
+2026-06-14T23:12:42.5139972Z [36;1mimport android.os.Bundle[0m
+2026-06-14T23:12:42.5140300Z [36;1mimport androidx.activity.ComponentActivity[0m
+2026-06-14T23:12:42.5140665Z [36;1mimport androidx.activity.compose.setContent[0m
+2026-06-14T23:12:42.5141074Z [36;1mimport com.lumina.sunchaser.presentation.main.MainScreen[0m
+2026-06-14T23:12:42.5141553Z [36;1mimport com.lumina.sunchaser.presentation.main.MainViewModel[0m
+2026-06-14T23:12:42.5142064Z [36;1mimport com.lumina.sunchaser.domain.usecase.CalculateRatingUseCase[0m
+2026-06-14T23:12:42.5142627Z [36;1mimport com.lumina.sunchaser.domain.usecase.GetAiRecommendationUseCase[0m
+2026-06-14T23:12:42.5143165Z [36;1mimport com.lumina.sunchaser.domain.repository.WeatherRepository[0m
+2026-06-14T23:12:42.5143647Z [36;1mimport com.lumina.sunchaser.data.remote.OpenMeteoService[0m
+2026-06-14T23:12:42.5144137Z [36;1mimport com.lumina.sunchaser.data.repository.WeatherRepositoryImpl[0m
+2026-06-14T23:12:42.5144546Z [36;1mimport retrofit2.Retrofit[0m
+2026-06-14T23:12:42.5144901Z [36;1mimport retrofit2.converter.gson.GsonConverterFactory[0m
+2026-06-14T23:12:42.5145437Z [36;1m[0m
+2026-06-14T23:12:42.5145681Z [36;1mclass MainActivity : ComponentActivity() {[0m
+2026-06-14T23:12:42.5146059Z [36;1m    override fun onCreate(savedInstanceState: Bundle?) {[0m
+2026-06-14T23:12:42.5146445Z [36;1m        super.onCreate(savedInstanceState)[0m
+2026-06-14T23:12:42.5146746Z [36;1m        [0m
+2026-06-14T23:12:42.5147329Z [36;1m        // Manual DI since we haven't fully wired Hilt application class[0m
+2026-06-14T23:12:42.5147748Z [36;1m        val api = Retrofit.Builder()[0m
+2026-06-14T23:12:42.5148081Z [36;1m            .baseUrl(OpenMeteoService.BASE_URL)[0m
+2026-06-14T23:12:42.5148471Z [36;1m            .addConverterFactory(GsonConverterFactory.create())[0m
+2026-06-14T23:12:42.5148828Z [36;1m            .build()[0m
+2026-06-14T23:12:42.5149127Z [36;1m            .create(OpenMeteoService::class.java)[0m
+2026-06-14T23:12:42.5149473Z [36;1m        val repo = WeatherRepositoryImpl(api)[0m
+2026-06-14T23:12:42.5149810Z [36;1m        val calc = CalculateRatingUseCase()[0m
+2026-06-14T23:12:42.5150093Z [36;1m        [0m
+2026-06-14T23:12:42.5150482Z [36;1m        // For OnlySQ we need an empty stub or null service for the prototype if we don't have a key[0m
+2026-06-14T23:12:42.5150957Z [36;1m        val onlySqApi = Retrofit.Builder()[0m
+2026-06-14T23:12:42.5151384Z [36;1m            .baseUrl(com.lumina.sunchaser.data.remote.OnlySqService.BASE_URL)[0m
+2026-06-14T23:12:42.5151878Z [36;1m            .addConverterFactory(GsonConverterFactory.create())[0m
+2026-06-14T23:12:42.5152234Z [36;1m            .build()[0m
+2026-06-14T23:12:42.5152637Z [36;1m            .create(com.lumina.sunchaser.data.remote.OnlySqService::class.java)[0m
+2026-06-14T23:12:42.5153094Z [36;1m        [0m
+2026-06-14T23:12:42.5153369Z [36;1m        val aiUse = GetAiRecommendationUseCase(onlySqApi)[0m
+2026-06-14T23:12:42.5153703Z [36;1m        [0m
+2026-06-14T23:12:42.5153962Z [36;1m        val viewModel = MainViewModel(repo, calc, aiUse)[0m
+2026-06-14T23:12:42.5154281Z [36;1m        [0m
+2026-06-14T23:12:42.5154485Z [36;1m        setContent {[0m
+2026-06-14T23:12:42.5154740Z [36;1m            MainScreen(viewModel)[0m
+2026-06-14T23:12:42.5155006Z [36;1m        }[0m
+2026-06-14T23:12:42.5155222Z [36;1m    }[0m
+2026-06-14T23:12:42.5155425Z [36;1m}[0m
+2026-06-14T23:12:42.5155612Z [36;1mEOF[0m
+2026-06-14T23:12:42.5155815Z [36;1m[0m
+2026-06-14T23:12:42.5156064Z [36;1m# Add basic theme and icon so build doesn't fail[0m
+2026-06-14T23:12:42.5156429Z [36;1mcat <<EOF > app/src/main/res/values/themes.xml[0m
+2026-06-14T23:12:42.5156770Z [36;1m<?xml version="1.0" encoding="utf-8"?>[0m
+2026-06-14T23:12:42.5157234Z [36;1m<resources>[0m
+2026-06-14T23:12:42.5157619Z [36;1m    <style name="Theme.Lumina" parent="android:Theme.Material.Light.NoActionBar" />[0m
+2026-06-14T23:12:42.5158047Z [36;1m</resources>[0m
+2026-06-14T23:12:42.5158262Z [36;1mEOF[0m
+2026-06-14T23:12:42.5158458Z [36;1m[0m
+2026-06-14T23:12:42.5158752Z [36;1mcat <<EOF > app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml[0m
+2026-06-14T23:12:42.5159136Z [36;1m<?xml version="1.0" encoding="utf-8"?>[0m
+2026-06-14T23:12:42.5159569Z [36;1m<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">[0m
+2026-06-14T23:12:42.5160065Z [36;1m    <background android:drawable="@android:color/white"/>[0m
+2026-06-14T23:12:42.5160478Z [36;1m    <foreground android:drawable="@android:color/black"/>[0m
+2026-06-14T23:12:42.5160816Z [36;1m</adaptive-icon>[0m
+2026-06-14T23:12:42.5161049Z [36;1mEOF[0m
+2026-06-14T23:12:42.5161244Z [36;1m[0m
+2026-06-14T23:12:42.5161552Z [36;1mcat <<EOF > app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml[0m
+2026-06-14T23:12:42.5161951Z [36;1m<?xml version="1.0" encoding="utf-8"?>[0m
+2026-06-14T23:12:42.5162390Z [36;1m<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">[0m
+2026-06-14T23:12:42.5162865Z [36;1m    <background android:drawable="@android:color/white"/>[0m
+2026-06-14T23:12:42.5163394Z [36;1m    <foreground android:drawable="@android:color/black"/>[0m
+2026-06-14T23:12:42.5163729Z [36;1m</adaptive-icon>[0m
+2026-06-14T23:12:42.5163983Z [36;1mEOF[0m
+2026-06-14T23:12:42.5341695Z shell: /usr/bin/bash -e {0}
+2026-06-14T23:12:42.5341999Z env:
+2026-06-14T23:12:42.5342357Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:42.5343157Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:42.5343617Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-06-14T23:12:42.5343950Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-06-14T23:12:42.5344268Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-06-14T23:12:42.5344706Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-06-14T23:12:42.5345196Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-06-14T23:12:42.5345530Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-06-14T23:12:42.5345809Z ##[endgroup]
+2026-06-14T23:12:42.5567453Z ##[group]Run gradle assembleDebug
+2026-06-14T23:12:42.5567815Z [36;1mgradle assembleDebug[0m
+2026-06-14T23:12:42.5599965Z shell: /usr/bin/bash -e {0}
+2026-06-14T23:12:42.5600242Z env:
+2026-06-14T23:12:42.5600578Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:42.5601089Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.19-10/x64
+2026-06-14T23:12:42.5601519Z   GRADLE_ACTION_ID: gradle/actions/setup-gradle
+2026-06-14T23:12:42.5601839Z   GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+2026-06-14T23:12:42.5602156Z   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+2026-06-14T23:12:42.5602608Z   DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+2026-06-14T23:12:42.5603102Z   DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+2026-06-14T23:12:42.5603444Z   GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+2026-06-14T23:12:42.5603726Z ##[endgroup]
+2026-06-14T23:12:43.2122947Z 
+2026-06-14T23:12:43.2124051Z Welcome to Gradle 8.2!
+2026-06-14T23:12:43.2124528Z 
+2026-06-14T23:12:43.2127460Z Here are the highlights of this release:
+2026-06-14T23:12:43.2137840Z  - Kotlin DSL: new reference documentation, assignment syntax by default
+2026-06-14T23:12:43.2138777Z  - Kotlin DSL is now the default with Gradle init
+2026-06-14T23:12:43.2139501Z  - Improved suggestions to resolve errors in console output
+2026-06-14T23:12:43.2140028Z 
+2026-06-14T23:12:43.2140636Z For more details see https://docs.gradle.org/8.2/release-notes.html
+2026-06-14T23:12:43.2141139Z 
+2026-06-14T23:12:43.6065254Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-06-14T23:13:18.2093867Z Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
+2026-06-14T23:13:18.2117508Z License for package Android SDK Build-Tools 33.0.1 accepted.
+2026-06-14T23:13:18.2158823Z Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+2026-06-14T23:13:19.2064715Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
+2026-06-14T23:13:19.2065321Z Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
+2026-06-14T23:13:19.2065853Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
+2026-06-14T23:13:19.5083295Z "Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
+2026-06-14T23:13:19.9077545Z > Task :app:preBuild UP-TO-DATE
+2026-06-14T23:13:19.9085289Z > Task :app:preDebugBuild UP-TO-DATE
+2026-06-14T23:13:19.9086115Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-06-14T23:13:32.2098777Z > Task :app:generateDebugResValues
+2026-06-14T23:13:32.2121927Z > Task :app:checkDebugAarMetadata
+2026-06-14T23:13:32.3064202Z > Task :app:mapDebugSourceSetPaths
+2026-06-14T23:13:32.3065094Z > Task :app:generateDebugResources
+2026-06-14T23:13:33.0079545Z > Task :app:packageDebugResources
+2026-06-14T23:13:33.6068012Z > Task :app:mergeDebugResources
+2026-06-14T23:13:34.0064624Z > Task :app:createDebugCompatibleScreenManifests
+2026-06-14T23:13:34.0080558Z > Task :app:extractDeepLinksDebug
+2026-06-14T23:13:34.1064768Z > Task :app:parseDebugLocalResources
+2026-06-14T23:13:34.3063595Z 
+2026-06-14T23:13:34.3070454Z > Task :app:processDebugMainManifest
+2026-06-14T23:13:34.3071698Z package="com.lumina.sunchaser" found in source AndroidManifest.xml: /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/AndroidManifest.xml.
+2026-06-14T23:13:34.3073135Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+2026-06-14T23:13:34.3074471Z Recommendation: remove package="com.lumina.sunchaser" from the source AndroidManifest.xml: /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/src/main/AndroidManifest.xml.
+2026-06-14T23:13:34.6066674Z 
+2026-06-14T23:13:34.6068297Z > Task :app:processDebugManifest
+2026-06-14T23:13:35.9088452Z > Task :app:javaPreCompileDebug
+2026-06-14T23:13:35.9118232Z > Task :app:mergeDebugShaders
+2026-06-14T23:13:35.9119010Z > Task :app:compileDebugShaders NO-SOURCE
+2026-06-14T23:13:35.9148617Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-06-14T23:13:36.0098440Z > Task :app:mergeDebugAssets
+2026-06-14T23:13:36.0146591Z > Task :app:compressDebugAssets
+2026-06-14T23:13:36.0167958Z > Task :app:desugarDebugFileDependencies
+2026-06-14T23:13:37.9073544Z > Task :app:processDebugManifestForPackage
+2026-06-14T23:13:38.0063790Z > Task :app:checkDebugDuplicateClasses
+2026-06-14T23:13:39.0098329Z > Task :app:processDebugResources
+2026-06-14T23:14:08.7091206Z > Task :app:mergeExtDexDebug
+2026-06-14T23:14:48.2085286Z > Task :app:mergeDebugJniLibFolders
+2026-06-14T23:14:48.2108428Z > Task :app:mergeLibDexDebug
+2026-06-14T23:14:48.4065467Z > Task :app:mergeDebugNativeLibs NO-SOURCE
+2026-06-14T23:14:48.4088262Z > Task :app:stripDebugDebugSymbols NO-SOURCE
+2026-06-14T23:14:49.4064831Z > Task :app:validateSigningDebug
+2026-06-14T23:14:49.4077797Z > Task :app:writeDebugAppMetadata
+2026-06-14T23:14:49.5088294Z > Task :app:writeDebugSigningConfigVersions
+2026-06-14T23:14:54.3066343Z > Task :app:kaptGenerateStubsDebugKotlin
+2026-06-14T23:14:56.5067272Z /home/runner/work/Lumina-SunChaser/Lumina-SunChaser/app/build/tmp/kapt3/stubs/debug/com/lumina/sunchaser/domain/usecase/AstronomicalCalculator.java:8: error: incompatible types: NonExistentClass cannot be converted to Annotation
+2026-06-14T23:14:56.5068209Z 
+2026-06-14T23:14:56.5068549Z     @error.NonExistentClass
+2026-06-14T23:14:56.5068930Z > Task :app:kaptDebugKotlin FAILED
+2026-06-14T23:14:56.5069325Z           ^
+2026-06-14T23:14:56.6078216Z 
+2026-06-14T23:14:56.6078779Z 26 actionable tasks: 26 executed
+2026-06-14T23:14:56.6079821Z FAILURE: Build failed with an exception.
+2026-06-14T23:14:56.6080303Z 
+2026-06-14T23:14:56.6080604Z * What went wrong:
+2026-06-14T23:14:56.6081194Z Execution failed for task ':app:kaptDebugKotlin'.
+2026-06-14T23:14:56.6082449Z > A failure occurred while executing org.jetbrains.kotlin.gradle.internal.KaptWithoutKotlincTask$KaptExecutionWorkAction
+2026-06-14T23:14:56.6083899Z    > java.lang.reflect.InvocationTargetException (no error message)
+2026-06-14T23:14:56.6084554Z 
+2026-06-14T23:14:56.6084814Z * Try:
+2026-06-14T23:14:56.6085365Z > Run with --stacktrace option to get the stack trace.
+2026-06-14T23:14:56.6086132Z > Run with --info or --debug option to get more log output.
+2026-06-14T23:14:56.6086849Z > Run with --scan to get full insights.
+2026-06-14T23:14:56.6087771Z > Get more help at https://help.gradle.org.
+2026-06-14T23:14:56.6088262Z 
+2026-06-14T23:14:56.6088545Z BUILD FAILED in 2m 13s
+2026-06-14T23:14:56.9706549Z ##[error]Process completed with exit code 1.
+2026-06-14T23:14:56.9864478Z Post job cleanup.
+2026-06-14T23:14:57.2252478Z In post-action step
+2026-06-14T23:14:57.2261027Z Stopping all Gradle daemons before saving Gradle User Home state
+2026-06-14T23:14:57.2261897Z Stopping Gradle daemons for /home/runner/gradle-installations/installs/gradle-8.2
+2026-06-14T23:14:57.2280330Z [command]/home/runner/gradle-installations/installs/gradle-8.2/bin/gradle --stop
+2026-06-14T23:14:58.0628798Z Stopping Daemon(s)
+2026-06-14T23:14:58.0652058Z 1 Daemon stopped
+2026-06-14T23:14:58.0866264Z ##[group]Caching Gradle state
+2026-06-14T23:14:58.3843147Z Caching dependencies with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and cache key: gradle-dependencies-v1-31828298128b55e348413822349748f7
+2026-06-14T23:14:58.4448518Z Caching instrumented-jars with path '/home/runner/.gradle/caches/jars-*/*/' and cache key: gradle-instrumented-jars-v1-e248a16916076e381b442d80205ff284
+2026-06-14T23:14:58.5470761Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:14:58.8509747Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:14:59.8036135Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/modules-*/files-*/*/*/*/*' and key: gradle-dependencies-v1-31828298128b55e348413822349748f7: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>08zUvagAAAAAi11swj+klQp89a+tPTtwnUEhMMzBFREdFMDQxNgBFZGdl
+2026-06-14T23:14:59.9804800Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches/jars-*/*/' and key: gradle-instrumented-jars-v1-e248a16916076e381b442d80205ff284: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>08zUvagAAAAApKuQ6FV76TYZBhHEw7m6BUEhMMzBFREdFMDIxMQBFZGdl
+2026-06-14T23:15:00.0794060Z Caching Gradle User Home with cache key: gradle-home-v1|Linux|build[5df42585ae8f8da228c604b8b4e8707c]-be10eca51d66e79153b60d6d3b9c6de3e364bd8a
+2026-06-14T23:15:00.0884278Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Lumina-SunChaser/Lumina-SunChaser --files-from manifest.txt --use-compress-program zstdmt
+2026-06-14T23:15:00.9900531Z ##[warning]Failed to save cache entry with path '/home/runner/.gradle/caches,/home/runner/.gradle/notifications,/home/runner/.gradle/.setup-gradle' and key: gradle-home-v1|Linux|build[5df42585ae8f8da228c604b8b4e8707c]-be10eca51d66e79153b60d6d3b9c6de3e364bd8a: Error: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>09DUvagAAAABolSlkDMFpSJ+bah+N0oWzUEhMMzBFREdFMDEwNwBFZGdl
+2026-06-14T23:15:00.9905651Z ##[endgroup]
+2026-06-14T23:15:00.9906042Z Generating Job Summary
+2026-06-14T23:15:00.9919802Z Completed post-action step
+2026-06-14T23:15:01.0112092Z Post job cleanup.
+2026-06-14T23:15:01.1908630Z Post job cleanup.
+2026-06-14T23:15:01.2923631Z [command]/usr/bin/git version
+2026-06-14T23:15:01.2966042Z git version 2.54.0
+2026-06-14T23:15:01.3011202Z Temporarily overriding HOME='/home/runner/work/_temp/3b2b536a-c6c1-43db-8a80-0d4cdfec259b' before making global git config changes
+2026-06-14T23:15:01.3012777Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-14T23:15:01.3018443Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Lumina-SunChaser/Lumina-SunChaser
+2026-06-14T23:15:01.3059655Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-14T23:15:01.3098907Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-14T23:15:01.3418094Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-14T23:15:01.3428066Z http.https://github.com/.extraheader
+2026-06-14T23:15:01.3429361Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-14T23:15:01.3438603Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-14T23:15:01.3673393Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-14T23:15:01.3706010Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-14T23:15:01.4058816Z Cleaning up orphan processes
+2026-06-14T23:15:01.4359721Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-java@v4, gradle/actions/setup-gradle@v3. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

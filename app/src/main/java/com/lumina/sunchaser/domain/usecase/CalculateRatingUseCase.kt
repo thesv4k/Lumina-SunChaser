@@ -2,9 +2,8 @@ package com.lumina.sunchaser.domain.usecase
 
 import com.lumina.sunchaser.domain.model.WeatherData
 import com.lumina.sunchaser.domain.model.UserProfile
-import javax.inject.Inject
 
-class CalculateRatingUseCase @Inject constructor() {
+class CalculateRatingUseCase () {
 
     /**
      * Возвращает рейтинг от 0 до 100 на основе погоды и профиля пользователя.

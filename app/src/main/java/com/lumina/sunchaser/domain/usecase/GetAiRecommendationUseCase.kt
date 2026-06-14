@@ -6,9 +6,8 @@ import com.lumina.sunchaser.data.remote.OnlySqService
 import com.lumina.sunchaser.domain.model.AiRecommendation
 import com.lumina.sunchaser.domain.model.UserProfile
 import com.lumina.sunchaser.domain.model.WeatherData
-import javax.inject.Inject
 
-class GetAiRecommendationUseCase @Inject constructor(
+class GetAiRecommendationUseCase (
     private val api: OnlySqService
 ) {
     suspend fun execute(weather: WeatherData, profile: UserProfile): Result<AiRecommendation?> {

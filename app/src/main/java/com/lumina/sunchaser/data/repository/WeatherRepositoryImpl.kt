@@ -5,9 +5,8 @@ import com.lumina.sunchaser.domain.model.WeatherData
 import com.lumina.sunchaser.domain.repository.WeatherRepository
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import javax.inject.Inject
 
-class WeatherRepositoryImpl @Inject constructor(
+class WeatherRepositoryImpl (
     private val api: OpenMeteoService
 ) : WeatherRepository {
 
