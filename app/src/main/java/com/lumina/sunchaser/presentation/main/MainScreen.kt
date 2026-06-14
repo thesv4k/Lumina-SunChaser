@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.sp
 import com.lumina.sunchaser.presentation.theme.NightVisionColorScheme
 import com.lumina.sunchaser.presentation.theme.DayColorScheme
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(viewModel: MainViewModel) {
     val state by viewModel.state.collectAsState()
